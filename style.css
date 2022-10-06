@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.card {
+    padding: 40px;
+    width: 18rem;
+    height: 30rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+h1 {
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14.3px;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: var(--very-light-gray);
+    border: none;
+    padding: 13px 30px 13px 30px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.sedans-container {
+    background-color: var(--bright-orange);
+    border-radius: 8px 0 0 8px;
+}
+
+.sedans-container button {
+    color: var(--bright-orange);
+}
+
+.suvs-container {
+    background-color: var(--dark-cyan);
+    color: var(--dark-cyan);
+}
+
+.suvs-container button {
+    color: var(--dark-cyan);
+}
+
+.luxury-container {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 8px 8px 0;
+}
+
+.luxury-container button {
+    color: var(--very-dark-cyan);
+}
+
+button:hover {
+    outline-color: var(--very-light-gray);    
+    outline-style: solid;
+    outline-width: 2px;
+    background-color: transparent;
+    color: var(--very-light-gray);
+    font-weight: normal;
+}
+
+button:active {
+    transform: scale(0.9);
+  }
+
+@media (max-width : 860px) {
+    body {
+        display: flex;
+        width: 100%;
+        overflow: scroll;
+        flex-wrap: wrap;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .card {
+        height: 25rem;
+    }
+    
+    button {
+        margin-top: 0;
+    }
+
+    .sedans-container {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .luxury-container {
+        border-radius: 0 0 8px 8px;
+    }
+
+    p {
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);    
+}
