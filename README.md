@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here to see solution]()
-- Live Site URL: [Click here to preview the website]()
+- Solution URL: [Click here to see solution](https://www.frontendmentor.io/solutions/3column-preview-card-component-ZMnEgmybOC)
+- Live Site URL: [Click here to preview the website](https://ktmogo.github.io/3-column-preview-card-component-solution/)
 
 ## My process
 
